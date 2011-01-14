@@ -15,12 +15,19 @@
 " along with this program.  If not, see <http://www.gnu.org/licenses/>.
 "-------------------------------------------------------------------------
 
+" ** general configurations
+" always keep the syntax highlighting on
 :syntax on
+" always show line numbers
 :set number
+" highlight search
 :set hlsearch
+" incremental search
 :set incsearch
+" prefered background color is black
 :set background=dark
 :set showcmd
+" activate mouse
 :set mouse=a
 :filetype on
 :set textwidth=80
@@ -45,9 +52,17 @@
 :map <C-J> <C-W>j<C-W>_
 :map <C-H> <C-W>h<C-W>\|
 
-" tabs manipulations
-:map <C-l> :tabnext<CR>
-:map <C-h> :tabNext<CR>
-:map <C-t> :tabnew<CR>
+" ** tabs configurations
+" always show the tab line at the top of the page
 :set showtabline=2
+" maximum number of tabs to open at the same time
 :set tabpagemax=15
+
+" ** tabs manipulations key mapping
+" CTRL+l -> go to the next tab
+:map <C-l> :tabnext<CR>
+" CTRL+h -> go to the previous tab
+:map <C-h> :tabNext<CR>
+" CTRL+t -> open a new tab
+:map <C-t> :tabnew<CR>
+
