@@ -1,0 +1,3 @@
+To install:
+	Copy all files in this directory into your /etc/vim/ directory. Remember
+	to always make a backup of your own configs before that.
