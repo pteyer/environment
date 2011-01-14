@@ -1,0 +1,53 @@
+"-------------------------------------------------------------------------
+" Copyright 2010, 2011 Peyman Taher.
+"
+" This program is free software: you can redistribute it and/or modify
+" it under the terms of the GNU General Public License as published by
+" the Free Software Foundation, either version 3 of the License, or
+" (at your option) any later version.
+" 
+" This program is distributed in the hope that it will be useful,
+" but WITHOUT ANY WARRANTY; without even the implied warranty of
+" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+" GNU General Public License for more details.
+" 
+" You should have received a copy of the GNU General Public License
+" along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"-------------------------------------------------------------------------
+
+:syntax on
+:set number
+:set hlsearch
+:set incsearch
+:set background=dark
+:set showcmd
+:set mouse=a
+:filetype on
+:set textwidth=80
+:au BufEnter *.c,*.cpp,*.java :set cindent
+:au BufEnter *.c,*.cpp,*.java,*.tex,*.latex :map <F5> :w<CR>:make -f Makefile.%<<CR>:clist<CR>
+	:map <F9> :w<CR>:make<CR>:clist<CR>
+:au BufNewFile *.c 0r /etc/vim/skeleton.c
+:au BufNewFile *.cpp 0r /etc/vim/skeleton.cpp
+:au BufNewFile *.java 0r /etc/vim/skeleton.java
+:au BufNewFile *.pl 0r /etc/vim/skeleton.pl
+:au BufNewFile *.py 0r /etc/vim/skeleton.py
+:au BufNewFile *.tex,*.latex 0r /etc/vim/skeleton.tex
+	:set autoindent
+:au BufEnter *.tex,*.latex,*.txt 	:setlocal spell spelllang=en_us
+:map <F12> :noh<CR>
+:map <F3> :cp<CR>
+:map <F4> :cn<CR>
+:map <F6> :bNext<CR>
+:map <F7> :bnext<CR>
+:map <C-L> <C-W>l<C-W>\|
+:map <C-K> <C-W>k<C-W>_
+:map <C-J> <C-W>j<C-W>_
+:map <C-H> <C-W>h<C-W>\|
+
+" tabs manipulations
+:map <C-l> :tabnext<CR>
+:map <C-h> :tabNext<CR>
+:map <C-t> :tabnew<CR>
+:set showtabline=2
+:set tabpagemax=15
