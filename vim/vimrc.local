@@ -65,4 +65,5 @@
 :map <C-h> :tabNext<CR>
 " CTRL+t -> open a new tab
 :map <C-t> :tabnew<CR>
-
+" CTRL+w -> close the tab
+:map <C-w> :tabclose<CR>
