@@ -1,0 +1,9 @@
+# maven
+alias 'mvnci'='mvn clean install'
+
+# git
+alias 'gst'='git status -s'
+
+# misc
+alias 'grep'='grep --color'
+
