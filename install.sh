@@ -6,3 +6,6 @@ cp -v -i ./vim/vimrc.local ~/.vimrc.local
 echo "installing tmux files...";
 cp -v -i ./tmux/tmux.conf ~/.tmux.conf
 
+echo "installing bashrc file...";
+cat ./bash/bashrc >> ~/.bashrc
+
