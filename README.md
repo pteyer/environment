@@ -1,5 +1,6 @@
-EVN
+Environment
 ===
 
 # How to install?
-`./install.sh`
+Clone the repository: `git clone git@github.com:pteyer/env.git`
+Run `./install.sh` to install all.
