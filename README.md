@@ -1,1 +1,5 @@
-To use the configuration files, read the README in each directory.
+EVN
+===
+
+# How to install?
+`./install.sh`
