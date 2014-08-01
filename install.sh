@@ -7,7 +7,8 @@ echo "installing tmux files...";
 cp -v -i ./tmux/tmux.conf ~/.tmux.conf
 
 echo "install alias files...";
-cp -v -i ./shell/bashrc.alias ~/.bashrc.alias
+cat ./shell/bashrc.alias >> ~/.bashrc.alias
+cat ./git/.gitconfig >> ~/.gitconfig
 
 echo "installing bashrc file...";
 cat ./bash/bashrc >> ~/.bashrc
