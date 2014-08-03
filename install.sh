@@ -1,10 +1,10 @@
 #!/bin/sh
 
 echo "installing vimrc files...";
-cp -v -i ./vim/vimrc.local ~/.vimrc.local
+cat ./vim/vimrc.local >> ~/.vimrc
 
 echo "installing tmux files...";
-cp -v -i ./tmux/tmux.conf ~/.tmux.conf
+cat ./tmux/tmux.conf >> ~/.tmux.conf
 
 echo "install alias files...";
 cat ./shell/bashrc.alias >> ~/.bashrc.alias
