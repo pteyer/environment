@@ -25,3 +25,4 @@ alias gcommit='git commit -a'
 alias gpull='git pull'
 alias gpush='git push'
 
+alias mvnci='mvn clean install'
