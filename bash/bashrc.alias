@@ -1,0 +1,15 @@
+# maven
+alias 'mvnci'='mvn clean install'
+
+# git aliases
+alias gst='git status -s'
+alias gdiff='git diff'
+alias gcommit='git commit -a'
+alias gpull='git pull'
+alias gpush='git push'
+
+alias mvnci='mvn clean install'
+
+# misc
+alias 'grep'='grep --color'
+
