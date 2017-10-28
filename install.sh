@@ -6,10 +6,14 @@ cat ./vim/vimrc.local >> ~/.vimrc
 echo "installing tmux files...";
 cat ./tmux/tmux.conf >> ~/.tmux.conf
 
-echo "install alias files...";
-cat ./shell/bashrc.alias >> ~/.bashrc.alias
+echo "install git config...";
 cat ./git/.gitconfig >> ~/.gitconfig
 
 echo "installing bashrc file...";
 cat ./bash/bashrc >> ~/.bashrc
 
+echo "installing aliases...";
+cat ./bash/bashrc.alias >> ~/.bashrc.alias
+
+echo "loading bashrc files for this session...";
+source ~/.bashrc

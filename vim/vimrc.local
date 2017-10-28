@@ -1,5 +1,5 @@
 "-------------------------------------------------------------------------
-" Copyright 2010, 2011, 2012, 2013, 2014 Paymon Teyer.
+" Copyright 2010-2017 Paymon Teyer.
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -29,6 +29,7 @@
 :set showcmd
 :filetype on
 :set textwidth=80
+:set paste
 :au BufEnter *.c,*.cpp,*.java :set cindent
 :au BufEnter *.c,*.cpp,*.java,*.tex,*.latex :map <F5> :w<CR>:make -f Makefile.%<<CR>:clist<CR>
 	:map <F9> :w<CR>:make<CR>:clist<CR>
