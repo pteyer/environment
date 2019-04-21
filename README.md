@@ -6,4 +6,4 @@ Custom configurations for `bash`, `git`, `tmux`, and `vim`.
 
 Clone the repository: `git clone https://github.com/pteyer/environment.git`. 
 
-Run `./install.sh` to install all.
+Run `./install-linux.sh` to install on Linux or `./install-mac.sh` to install on Mac OS.
