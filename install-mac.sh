@@ -9,11 +9,8 @@ cat ./tmux/tmux.conf >> ~/.tmux.conf
 echo "install git config...";
 cat ./git/.gitconfig >> ~/.gitconfig
 
-echo "installing bashrc file...";
-cat ./bash/bashrc >> ~/.bashrc
+echo "installing bash profile file...";
+cat ./bash/bashrc >> ~/.bash_profile
 
 echo "installing aliases...";
 cat ./bash/bashrc.alias >> ~/.bashrc.alias
-
-echo "loading bashrc files for this session...";
-source ~/.bashrc
