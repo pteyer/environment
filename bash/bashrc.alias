@@ -26,8 +26,6 @@ alias gpull='git pull'
 alias gpush='git push'
 alias gout='git checkout'
 
-alias mvnci='mvn clean install'
-
 # misc
 alias 'grep'='grep --color'
 
