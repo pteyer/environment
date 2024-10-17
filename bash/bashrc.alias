@@ -28,4 +28,7 @@ alias gout='git checkout'
 
 # misc
 alias 'grep'='grep --color'
+alias la='ls -a'
+alias ll='ls -l'
+
 
